@@ -5,12 +5,12 @@ namespace Tests\Feature;
 use App\Models\Blog;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Arr;
-use Tests\TestCase;
+use Tests\BaseApiTestCase;
 
 /**
  * @coversDefaultClass \App\Http\Controllers\BlogController
  */
-class BlogControllerTest extends TestCase
+class BlogControllerTest extends BaseApiTestCase
 {
     use RefreshDatabase;
 

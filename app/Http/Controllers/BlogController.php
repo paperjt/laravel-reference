@@ -18,6 +18,8 @@ class BlogController extends Controller
      */
     public function index(BlogRepository $repository): AnonymousResourceCollection
     {
+        $this->authorize('view-any', Blog::class);
+
         return BlogResource::collection($repository::getAllPaginated());
     }
 
